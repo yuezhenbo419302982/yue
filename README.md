@@ -34,4 +34,5 @@ You can suppose all limits don't have bugs.
 
 - Use git to manage your codes.
 - Obey linux-kernel coding style.
+  - https://www.kernel.org/doc/html/v4.10/process/coding-style.html
 - Create a unit test for regression.
