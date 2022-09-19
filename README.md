@@ -36,3 +36,4 @@ You can suppose all limits don't have bugs.
 - Obey linux-kernel coding style.
   - https://www.kernel.org/doc/html/v4.10/process/coding-style.html
 - Create a unit test for regression.
+**这是一个更通用的写法，跳出结果变为val参数为0但这也会让参数中不能有0的存在，但当参数自动获取时，出现0即可表示获取完毕**
