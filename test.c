@@ -1,62 +1,6 @@
 #include "collection.h"
 
 // return x > y is True?
-bool x_bigger_than_y(int size, struct item *list)
-{
-	int i, j;
-	for (i = 0; i < size; i++)
-	{
-		for (j = i + 1; j < size; j++)
-		{
-			if (strcmp(list[i].name, list[j].name) == 0)
-			{
-				if (list[i].val > list[j].val)
-				{
-					return true;
-				}
-			}
-		}
-	}
-	return false;
-}
-
-// return y > z is True ?
-bool y_bigger_than_z(int size, struct item *list)
-{
-	int i, j, k;
-	for (i = 0; i < size; i++)
-	{
-		for (j = i + 1; j < size; j++)
-		{
-			if (strcmp(list[i].name, list[j].name) == 0)
-			{
-				for (k = j + 1; k < size; k++)
-				{
-					if (strcmp(list[j].name, list[k].name) == 0)
-					{
-						if (list[j].val > list[k].val)
-						{
-							return true;
-						}
-					}
-				}
-			}
-		}
-	}
-	return false;
-}
-
-// print solution to screen
-void print_result(int size, struct item *list)
-{
-	int i;
-	for (i = 0; i < size; i++)
-	{
-		if(!i) printf("%s = %d", list[i].name, list[i].val);
-		else printf(", %s = %d", list[i].name, list[i].val);
-	}
-	printf("\n");
-}
 
 int main(void)
 {

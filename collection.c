@@ -32,7 +32,7 @@ int collection_add_variable(struct collection *c, char *var_name, int val0, ...)
 // Increase dependencies when adding elements
 int collection_add_limit(struct collection *c, limit_fp_t func)
 {
-    c->limit = func;
+    func(c->size,c->list);
     return 0;
 }
 
